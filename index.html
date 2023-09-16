@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Turnanos</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img id="icono_header" src="./assets/images/icono.png" alt="icono de la pagina"></a>
+        <a href="./index.html">
+            <h3>TurnanoS</h3>
+        </a>
+        <input type="checkbox" id="menu_toggle">
+        <label for="menu_toggle" id="menu_button"><img id="flecha_menu" src="./assets/images/flecha_menu.png" alt="menu"></label>
+        <div class="menu">
+            <div id="grid_menu_desplegable">
+                <div id="encabezado_menu_desplegable">
+                    <a href="./index.html"><img id="icono_header" src="./assets/images/icono.png" alt="icono de la pagina"></a>
+                    <a href="./index.html">
+                        <h3>TurnanoS</h3>
+                    </a>
+                </div>
+                <nav id="barra_de_navegacion">
+                    <ul>
+                        <li><a class="color_principal" href="#">¿Cómo Funciona?</a></li>
+                        <li><a class="color_base" href="./pages/sobre_nosotros.html">Sobre Nosotros</a></li>
+                        <li><a class="color_base" href="./pages/FAQs.html">FAQs</a></li>
+                        <li id="list_item_botones"><a href="./pages/turnos.html"><input class="boton_navegacion_turnos" type="button" value="Turnos"></a><!-- . --><a href="#"><input class="boton_navegacion_negocio" type="button" value="Mi Negocio"></a></li>
+                        <label for="menu_toggle" id="menu_close_button"><img id="flecha_menu" src="./assets/images/flecha_menu_arriba.png" alt="menu"></label> <!-- cambiar por una flecha invertida -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main id="como_funciona">
+        <section id="seccion_foto">
+            <img id="imagen_index" src="./assets/images/placeHolderImage.png" alt="foto_como_funciona?">
+        </section>
+        <section id="seccion_texto">
+            <h1>Sed rhoncus, tortora</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+                mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed
+                eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit
+                amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu
+                diam.</p>
+        </section>
+    </main>
+    <footer>
+        <div id="icono_footer">
+            <img src="./assets/images/icono_blanco.png" alt="icono TurnanoS"> <!-- imagen provisoria -->
+        </div>
+        <a id="texto1_footer" href="#">© 2023 TurnanoS Todos los derechos reservados</a>
+        <a id="texto2_footer" href="#">Política de Privacidad y Términos de Uso</a>
+        <a id="texto3_footer" href="#">Para consultas y soporte, contactanos</a>
+        <div id="iconos_redes">
+            <img src="./assets/images/icono_instagram.png" alt="icono de instagram">
+            <img src="./assets/images/icono_facebook.png" alt="icono de facebook">
+        </div>
+    </footer>
+</body>
+</html>
