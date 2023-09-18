@@ -681,3 +681,39 @@ footer a {
 
 /* MI NEGOCIO */
 
+#main_mi_negocio {
+    grid-area: main;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#checkbox_registro {
+    display: none;
+}
+
+#checkbox_iniciar_sesion {
+    display: none;
+}
+
+#seccion_incio_sesion_mi_negocio {
+    background-color: lightblue;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#seccion_principal_mi_negocio {
+    background-color: grey;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#seccion_registro_mi_negocio {
+    background-color: lightcoral;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
