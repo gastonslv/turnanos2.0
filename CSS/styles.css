@@ -730,11 +730,44 @@ footer a {
     background-color: #00698975;
     grid-area: inicio_sesion;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     border-radius: 12px;
     padding: 10%;
     height: 60%;
     width: 100%;
 }
+
+#seccion_incio_sesion_mi_negocio form h2 {
+    color: white;
+    position: relative;
+    font-size: 1.7em;
+}
+
+.entrada_datos_inicio_sesion {
+    text-align: center;
+    width: 100%;
+    height: 12%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#seccion_incio_sesion_mi_negocio form div {
+    justify-content: space-between;
+}
+
+#seccion_incio_sesion_mi_negocio form div a {
+    color: white;
+    font-size: 0.9em;
+}
+
+#seccion_incio_sesion_mi_negocio form div input {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px;
+}
+
 
 #seccion_incio_sesion_mi_negocio label{
     grid-area: flecha;
