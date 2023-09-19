@@ -718,9 +718,15 @@ footer a {
 #seccion_incio_sesion_mi_negocio {
     background-color: lightblue;
     position: relative;
+    display: grid;
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nada inicio_sesion flecha";
     width: 100%;
     height: 100%;
 }
+
+
 
 #seccion_principal_mi_negocio {
     position: relative;
