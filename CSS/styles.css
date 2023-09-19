@@ -722,6 +722,7 @@ footer a {
     grid-template-columns: 2fr 10fr 2fr;
     grid-template-rows: 1fr;
     grid-template-areas: "nada inicio_sesion flecha";
+    align-items: center;
     width: 100%;
     height: 100%;
 }
