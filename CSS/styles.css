@@ -730,6 +730,8 @@ footer a {
     background-color: #00698975;
     grid-area: inicio_sesion;
     display: flex;
+    border-radius: 12px;
+    padding: 10%;
     height: 60%;
     width: 100%;
 }
