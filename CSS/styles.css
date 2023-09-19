@@ -716,7 +716,6 @@ footer a {
 }
 
 #seccion_incio_sesion_mi_negocio {
-    background-color: lightblue;
     position: relative;
     display: grid;
     grid-template-columns: 2fr 10fr 2fr;
@@ -727,7 +726,17 @@ footer a {
     height: 100%;
 }
 
+#seccion_incio_sesion_mi_negocio form {
+    background-color: #00698975;
+    grid-area: inicio_sesion;
+    display: flex;
+    height: 60%;
+    width: 100%;
+}
 
+#seccion_incio_sesion_mi_negocio label{
+    grid-area: flecha;
+}
 
 #seccion_principal_mi_negocio {
     position: relative;
