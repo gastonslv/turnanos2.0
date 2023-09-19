@@ -683,6 +683,8 @@ footer a {
 
 #main_mi_negocio {
     grid-area: main;
+    display: block;
+    position: relative;
     height: 100%;
     width: 100%;
     overflow: hidden;
