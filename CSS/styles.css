@@ -111,13 +111,15 @@ footer {
 #icono_footer {
     grid-area: icono_footer;
     display: flex;
+    height: 100%;
+    width: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-#icono_footer a img{
-    height: 10%;
+#icono_footer a img {
+    height: 90px;
 }
 
 #texto1_footer {
