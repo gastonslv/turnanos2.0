@@ -692,10 +692,19 @@ footer a {
 #contenedor_secciones {
     display: flex;
     flex-direction: row;
-    z-index: 0;
+    position: relative;
     height: 100%;
     width: 300%;
     transition: transform 0.4s;
+    transform: translateX(-33.3333%)
+}
+
+#checkbox_iniciar_sesion:checked + #contenedor_secciones {
+    transform: translateX(0%);
+}
+
+#checkbox_registro:checked + #checkbox_iniciar_sesion + #contenedor_secciones {
+    transform: translate(-66.6666%);
 }
 
 #checkbox_registro {
@@ -708,7 +717,6 @@ footer a {
 
 #seccion_incio_sesion_mi_negocio {
     background-color: lightblue;
-    display: inline-block;
     position: relative;
     width: 100%;
     height: 100%;
@@ -716,7 +724,6 @@ footer a {
 
 #seccion_principal_mi_negocio {
     background-color: grey;
-    display: inline-block;
     position: relative;
     width: 100%;
     height: 100%;
@@ -724,7 +731,6 @@ footer a {
 
 #seccion_registro_mi_negocio {
     background-color: lightcoral;
-    display: inline-block;
     width: 100%;
     height: 100%;
 }
