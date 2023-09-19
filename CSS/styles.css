@@ -723,7 +723,6 @@ footer a {
 }
 
 #seccion_principal_mi_negocio {
-    background-color: grey;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -733,8 +732,20 @@ footer a {
     height: 100%;
 }
 
-#btn_iniciar_sesion {
-    border: 1px solid #006989
+#btn_mi_negocio {
+    border: 2px solid #006989;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 1.5em;
+}
+
+#btn_registrarse {
+    border: 2px solid #006989;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: #006989;
+    color: white;
+    font-size: 1.5em;
 }
 
 #seccion_registro_mi_negocio {
