@@ -699,11 +699,11 @@ footer a {
     transform: translateX(-33.3333%)
 }
 
-#checkbox_iniciar_sesion:checked + #contenedor_secciones {
+#checkbox_mi_negocio:checked + #contenedor_secciones {
     transform: translateX(0%);
 }
 
-#checkbox_registro:checked + #checkbox_iniciar_sesion + #contenedor_secciones {
+#checkbox_registro:checked + #checkbox_mi_negocio + #contenedor_secciones {
     transform: translate(-66.6666%);
 }
 
@@ -711,7 +711,7 @@ footer a {
     display: none;
 }
 
-#checkbox_iniciar_sesion {
+#checkbox_mi_negocio {
     display: none;
 }
 
@@ -725,8 +725,16 @@ footer a {
 #seccion_principal_mi_negocio {
     background-color: grey;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     width: 100%;
     height: 100%;
+}
+
+#btn_iniciar_sesion {
+    border: 1px solid #006989
 }
 
 #seccion_registro_mi_negocio {
