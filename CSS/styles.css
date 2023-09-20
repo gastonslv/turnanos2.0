@@ -351,8 +351,9 @@ footer a {
 #cuerpo_consultas h2 {
     display: block;
     position: relative;
-    margin-top: 5%;
-    margin-bottom: 4%;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    font-size: 1.7em;
     text-align: center;
     color: white;
 }
