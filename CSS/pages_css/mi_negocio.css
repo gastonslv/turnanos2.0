@@ -73,12 +73,16 @@
 }
 
 #seccion_incio_sesion_mi_negocio form div {
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
 
 #seccion_incio_sesion_mi_negocio form div a {
     color: white;
-    font-size: 0.9em;
+    width: 50%;
+    font-size: 0.7em;
 }
 
 #seccion_incio_sesion_mi_negocio form div input {
@@ -127,4 +131,16 @@
     position: relative;
     top: 40%;
     justify-content: center;
+}
+
+#seccion_incio_sesion_mi_negocio label figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#seccion_incio_sesion_mi_negocio label figure img {
+    height: 60px;
 }
