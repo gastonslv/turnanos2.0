@@ -1,0 +1,293 @@
+/* PAGINA TURNOS */
+
+#main_turnos {
+    position: relative;
+    grid-area: main;
+    height: 80vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#form_turnos {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 400%;
+    transition: transform 0.4s;
+}
+
+#siguiente_s1:checked + #form_turnos {
+    transform: translateY(-25%);
+}
+
+#siguiente_s1 {
+    display: none;
+}
+
+#siguiente_s2:checked + #siguiente_s1 + #form_turnos {
+    transform: translateY(-50%);
+}
+
+#siguiente_s2 {
+    display: none;
+}
+
+#siguiente_s3:checked + #siguiente_s2 + #siguiente_s1 + #form_turnos {
+    transform: translateY(-75%);
+}
+
+#siguiente_s3 {
+    display: none;
+}
+
+/* aspectos generales de los fieldset */
+
+#form_turnos fieldset {
+    border-style: none;
+}
+
+/* ------- SERVICIO/COMERCIO ------- */
+
+#fieldset_servicio_comercio {
+    display: grid;
+    width: 100%;
+    height: 80%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas:
+    "seccion_titulo_SyC"
+    "seccion_contenido_SyC"
+    "seccion_botones_SyC";
+}
+
+#seccion_titulo_SyC {
+    grid-area: seccion_titulo_SyC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion_contenido_SyC {
+    grid-area: seccion_contenido_SyC;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+#seccion_contenido_SyC select {
+    height: 10%;
+    border: 2px solid lightgrey;
+    border-radius: 12px;
+}
+
+#seccion_botones_SyC {
+    grid-area: seccion_botones_SyC;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn_siguiente_s1 {
+    background-color: #0069897a;
+    border: none;
+    color: white;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+/* ------- ELEGIR FECHA ------- */
+
+#fieldset_fecha {
+    display: grid;
+    width: 100%;
+    height: 80%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas:
+    "seccion_titulo_fecha"
+    "seccion_contenido_fecha"
+    "seccion_botones_fecha";
+}
+
+#seccion_titulo_fecha {
+    grid-area: seccion_titulo_fecha;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion_contenido_fecha {
+    grid-area: seccion_contenido_fecha;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+#seccion_contenido_fecha input {
+    height: 10%;
+    width: 100%;
+    border: 2px solid lightgrey;
+    border-radius: 12px;
+}
+
+#seccion_botones_fecha {
+    grid-area: seccion_botones_fecha;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#btn_siguiente_s2 {
+    background-color: #0069897a;
+    border: none;
+    color: white;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#btn_volver_s2 {
+    color: grey;
+    text-decoration-line: underline;
+}
+
+/* ------- DATOS PERSONALES ------- */
+
+#fieldset_datos_personales {
+    display: grid;
+    width: 100%;
+    height: 80%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas:
+    "seccion_titulo_datos_personales"
+    "seccion_contenido_datos_personales"
+    "seccion_botones_datos_personales";
+}
+
+#seccion_titulo_datos_personales {
+    grid-area: seccion_titulo_datos_personales;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion_contenido_datos_personales {
+    grid-area: seccion_contenido_datos_personales;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+#seccion_contenido_datos_personales input {
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    border: 2px solid lightgrey;
+    border-radius: 12px;
+}
+
+#seccion_contenido_datos_personales input#observaciones_turnos {
+    height: 30%;
+}
+
+#seccion_botones_datos_personales {
+    grid-area: seccion_botones_datos_personales;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#btn_siguiente_s3 {
+    background-color: #0069897a;
+    border: none;
+    color: white;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#btn_volver_s3 {
+    color: grey;
+    text-decoration-line: underline;
+}
+
+/* ------- POLITICAS CANCELACION ------- */
+
+#fieldset_politica_cancelacion {
+    display: grid;
+    width: 100%;
+    height: 80%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas:
+    "seccion_titulo_polCanc"
+    "seccion_contenido_polCanc"
+    "seccion_botones_polCanc";
+}
+
+#seccion_titulo_politica_cancelacion {
+    grid-area: seccion_titulo_polCanc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion_contenido_politica_cancelacion {
+    grid-area: seccion_contenido_polCanc;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#seccion_contenido_politica_cancelacion p {
+    text-align: start;
+    height: 300px;
+    width: 350px;
+    overflow: scroll;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#bloque_acepto_terminos_condiciones {
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#seccion_botones_politica_cancelacion {
+    grid-area: seccion_botones_polCanc;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#btn_reservar_turno {
+    background-color: #006989;
+    border: 1px solid #006989;
+    color: white;
+    font-size: 1em;
+    padding: 2.2%;
+    border-radius: 10px;
+}
+
+#btn_volver_s4 {
+    color: grey;
+    text-decoration-line: underline;
+}
