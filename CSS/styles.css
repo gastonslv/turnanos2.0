@@ -8,6 +8,14 @@
 
 /* Aspecto general para todas las paginas */
 
+.color_principal {
+    color: #006989;
+}
+
+.color_base {
+    color: white;
+}
+
 body {
     display: grid;
     font-family: 'Josefin Sans', sans-serif;
@@ -107,12 +115,4 @@ footer a {
     text-decoration: none;
     font-size: 0.8em;
     text-align: center;
-}
-
-.color_principal {
-    color: #006989;
-}
-
-.color_base {
-    color: white;
 }
