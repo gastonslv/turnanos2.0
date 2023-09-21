@@ -15,7 +15,7 @@
     height: 100%;
     width: 300%;
     transition: transform 0.4s;
-    transform: translateX(-33.3333%)
+    transform: translateX(-33.3333%);
 }
 
 #checkbox_mi_negocio:checked + #contenedor_secciones {
@@ -39,7 +39,7 @@
     display: grid;
     grid-template-columns: 2fr 10fr 2fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "nada inicio_sesion flecha";
+    grid-template-areas: "nada inicio_sesion nada_2";
     align-items: center;
     width: 100%;
     height: 100%;
@@ -87,10 +87,6 @@
     padding: 7px;
 }
 
-#seccion_incio_sesion_mi_negocio label{
-    grid-area: flecha;
-}
-
 #seccion_principal_mi_negocio {
     position: relative;
     display: flex;
@@ -121,4 +117,14 @@
     background-color: lightcoral;
     width: 100%;
     height: 100%;
+}
+
+/* flecha para volver a la seccion principal */
+
+#seccion_incio_sesion_mi_negocio label{
+    grid-area: inicio_sesion;
+    display: flex;
+    position: relative;
+    top: 40%;
+    justify-content: center;
 }
