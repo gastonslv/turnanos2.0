@@ -118,9 +118,11 @@
 }
 
 #seccion_registro_mi_negocio {
-    background-color: lightcoral;
+    display: flex;
     width: 100%;
     height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 /* flecha para volver a la seccion principal */
