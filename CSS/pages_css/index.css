@@ -1,21 +1,16 @@
 /* PAGINA COMO FUNCIONA */
 
 main#como_funciona {
-    display: grid;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 40% 60%;
-    grid-template-areas: 
-    "foto"
-    "texto";
+    overflow: scroll;
 }
 
 #seccion_foto {
     display: flex;
-    height: 100%;
     width: 100%;
-    grid-area: foto;
     justify-content: center;
     align-items: center;
 }
@@ -27,19 +22,24 @@ main#como_funciona {
 
 #seccion_texto {
     display: flex;
-    height: 100%;
     width: 100%;
-    grid-area: texto;
     flex-direction: column;
     justify-content: space-around;
     font-size: 1em;
-    padding: 0px 20px 0px 20px;
+    padding: 20px;
 }
 
 #seccion_texto h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+#seccion_texto h3 {
     text-align: center;
 }
 
 #seccion_texto p {
     text-align: justify;
 }
+
+
