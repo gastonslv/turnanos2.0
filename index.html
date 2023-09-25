@@ -10,14 +10,24 @@
 </head>
 <body>
     <header>
-        <figure>
-            <a href="./index.html">
-                <img id="icono_header" src="./assets/images/icono.png" alt="icono de la pagina">
+        <figure class="header_desktop">
+            <a href="./index.html" class="header_desktop">
+                <img id="icono_header" class="header_desktop" src="./assets/images/icono.png" alt="icono de la pagina">
             </a>
         </figure>
-        <a href="./index.html">
-            <h3>Turnanos</h3>
+        <a href="./index.html" class="header_desktop">
+            <h3 class="header_desktop">Turnanos</h3>
         </a>
+        <div id="desktop">
+            <figure>
+                <a href="./index.html">
+                    <img id="icono_header" src="./assets/images/icono.png" alt="icono de la pagina">
+                </a>
+            </figure>
+            <a href="./index.html">
+                <h3>Turnanos</h3>
+            </a>
+        </div>
         <input type="checkbox" id="menu_toggle">
         <label for="menu_toggle" id="menu_button"><img id="flecha_menu" src="./assets/images/flecha_menu.png" alt="menu"></label>
         <div class="menu">

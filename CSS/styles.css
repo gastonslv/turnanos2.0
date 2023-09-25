@@ -54,6 +54,10 @@ header a {
     height: 17px;
 }
 
+#desktop {
+    display: none;
+}
+
 footer {
     background-color: #808d92;
     display: grid;
@@ -119,8 +123,6 @@ footer a {
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 100%;
         grid-template-areas: "icono_footer texto_footer iconos_redes";
-        border-top-left-radius: 18px;
-        border-top-right-radius: 18px;
         align-items: center;
         justify-items: center;
     }
@@ -153,7 +155,7 @@ footer a {
     }
 }
 
-@media (min-width: 1400px){ /* adaptacion del footer en tablet */
+@media (min-width: 1400px){
     footer {
         height: 45%;
         grid-template-columns: 1fr 4fr 1fr;
@@ -174,5 +176,41 @@ footer a {
     
     #iconos_redes img {
         height: 33px;
+    }
+}
+
+@media (min-width: 1400px){
+    header {
+        background-color: #a3bac3;
+        height: 100%;
+        width: 100%;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 100%;
+        grid-template-areas: "icono_titulo nav_header";
+    }
+
+    .header_desktop{
+        display: none;
+    }
+
+    #desktop {
+        height: 100%;
+        width: 100%;
+        grid-area: icono_titulo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #icono_header {
+        height: 55px;
+    }
+
+    header #desktop a {
+        margin-left: 7%;
+        text-decoration: none;
+        color: #006989;
     }
 }

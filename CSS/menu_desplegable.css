@@ -80,3 +80,82 @@
 #encabezado_menu_desplegable a {
     padding-right: 8px;
 }
+
+@media (min-width: 1400px){
+    #menu_toggle {
+        display: none;
+    }
+
+    #flecha_menu {
+        display: none;
+    }
+    
+    .menu {
+        grid-area: nav_header;
+        display: inline-block;
+        position: relative;
+    }
+    
+    #grid_menu_desplegable {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20vh 60vh 20vh;
+        grid-template-areas:
+        "header_menu"
+        "opciones_menu";
+    }
+    
+    #encabezado_menu_desplegable {
+        display: flex;
+        grid-area: header_menu;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #barra_de_navegacion {
+        grid-area: opciones_menu;
+    }
+    
+    #barra_de_navegacion ul {
+        list-style-type: none;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #list_item_botones {
+        display: flex;
+        height: 23%;
+        width: 70%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .boton_navegacion_turnos {
+        height: 100%;
+        padding: 6px 22px 6px 22px;
+        border: 2px solid #006989;
+        background-color: white;
+        color: #006989;
+        border-radius: 14px;
+        font-size: 0.8em;
+    }
+    
+    .boton_navegacion_negocio {
+        height: 100%;
+        padding: 6px 10px 6px 10px;
+        border: 2px solid #006989;
+        background-color: #006989;
+        color: white;
+        border-radius: 14px;
+        font-size: 0.8em;
+    }
+    
+    #encabezado_menu_desplegable a {
+        padding-right: 8px;
+    }   
+}
