@@ -10,22 +10,37 @@
 </head>
 
 <body>
-    <header id="header_turnos">
-        <a href="../index.html"><img id="icono_header" src="../assets/images/icono.png" alt="icono de la pagina"></a>
-        <a href="../index.html">
-            <h3>TurnanoS</h3>
+    <header>
+        <figure class="header_desktop">
+            <a href="../index.html" class="header_desktop">
+                <img id="icono_header" class="header_desktop" src="../assets/images/icono.png" alt="icono de la pagina">
+            </a>
+        </figure>
+        <a href="../index.html" class="header_desktop">
+            <h3 class="header_desktop">Turnanos</h3>
         </a>
+        <div id="desktop">
+            <figure>
+                <a href="../index.html">
+                    <img id="icono_header" src="../assets/images/icono.png" alt="icono de la pagina">
+                </a>
+            </figure>
+            <a href="../index.html">
+                <h3>Turnanos</h3>
+            </a>
+        </div>
         <input type="checkbox" id="menu_toggle">
-        <label for="menu_toggle" id="menu_button"><img id="flecha_menu" src="../assets/images/flecha_menu.png"
-                alt="menu"></label>
-        <div class="menu">
+        <label for="menu_toggle" id="menu_button"><img id="flecha_menu" src="../assets/images/flecha_menu.png" alt="menu"></label>
+        <div class="menu" id="menu_desktop">
             <div id="grid_menu_desplegable">
                 <div id="encabezado_menu_desplegable">
+                    <figure  class="header_desktop">
+                        <a href="../index.html">
+                            <img id="icono_header" src="../assets/images/icono.png" alt="icono de la pagina">
+                        </a>
+                    </figure>
                     <a href="../index.html">
-                        <img id="icono_header" src="../assets/images/icono.png" alt="icono de la pagina">
-                    </a>
-                    <a href="../index.html">
-                        <h3>TurnanoS</h3>
+                        <h3  class="header_desktop">Turnanos</h3>
                     </a>
                 </div>
                 <nav id="barra_de_navegacion">
@@ -41,7 +56,17 @@
                                 <input class="boton_navegacion_negocio" type="button" value="Mi Negocio">
                             </a>
                         </li>
-                        <label for="menu_toggle">
+                        <li class="desktop_botones">
+                            <a href="#">
+                                <input class="boton_navegacion_turnos" type="button" value="Turnos">
+                            </a>
+                        </li>
+                        <li class="desktop_botones">
+                            <a href="./mi_negocio.html">
+                                <input class="boton_navegacion_negocio" type="button" value="Mi Negocio">
+                            </a>
+                        </li>
+                        <label for="menu_toggle" id="menu_close_button">
                             <img id="flecha_menu" src="../assets/images/flecha_menu_arriba.png" alt="menu">
                         </label>
                     </ul>
