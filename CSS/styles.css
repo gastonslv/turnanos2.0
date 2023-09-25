@@ -113,7 +113,7 @@ footer a {
     text-align: center;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px){ /* adaptacion del footer en tablet */
     footer {
         height: 60%;
         grid-template-columns: 1fr 2fr 1fr;
@@ -143,6 +143,50 @@ footer a {
     
     #iconos_redes img {
         height: 45px;
+    }
+    
+    footer a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.9em;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1400px){ /* adaptacion del footer en tablet */
+    footer {
+        height: 60%;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 100%;
+        grid-template-areas: "icono_footer texto_footer iconos_redes";
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    #icono_footer {
+        grid-area: icono_footer;
+    }
+    
+    #icono_footer a img {
+        height: 85px;
+    }
+    
+    #texto_footer{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #iconos_redes {
+        display: flex;
+        grid-area: iconos_redes;
+        flex-direction: reverse;
+        justify-content: space-evenly;
+    }
+    
+    #iconos_redes img {
+        height: 33px;
     }
     
     footer a {
