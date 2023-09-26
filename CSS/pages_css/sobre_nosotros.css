@@ -10,10 +10,12 @@
 #main_sobre_nosotros iframe {
     display: flex;
     grid-area: texto;
-    height: 50%;
+    height: 70%;
+    width: 70%;
     border-radius: 20px;    
 }
 
 #cuerpo_video_sobre_nosotros iframe {
     height: 50%;
 }
+
