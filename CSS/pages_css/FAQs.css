@@ -127,3 +127,50 @@
     border-radius: 12px;
     font-size: 1em;
 }
+
+@media (min-width: 1400px){
+    #body_FAQs {
+        grid-template-columns: 100%;
+        grid-template-rows: 20vh 80vh 35vh;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+    
+    #main_FAQs {
+        grid-template-columns: 1.4fr 1fr;
+        grid-template-rows: 100%;
+        grid-template-areas:
+        "preguntas_frecuentes consulta";
+    }
+    
+    #cuerpo_preguntas_frecuntes {
+        grid-area: preguntas_frecuentes;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 12% 88%;
+        grid-template-areas: 
+        "titulo_faqs"
+        "pregutas_faqs";
+        justify-items: center;
+        align-items: center;
+        height: 90%;
+        width: 90%;
+    }
+    
+    #titulo_FAQs {
+        grid-area: titulo_faqs;
+        width: 90%;
+        text-align: center;
+    }
+    
+    #cuerpo_consultas h2 {
+        margin-top: 5%;
+    }
+    
+    #boton_enviar_consulta {
+        height: 7%;
+        width: 30%;
+    }
+}
