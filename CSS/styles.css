@@ -213,4 +213,14 @@ footer a {
         text-decoration: none;
         color: #006989;
     }
+
+    .efectos:hover {
+        color: #00698977;
+        transition: color 0.3s ease;
+    }
+
+    .sotcefe:hover {
+        color: white;
+        transition: color 0.3s ease;
+    }
 }
