@@ -173,4 +173,58 @@
         height: 7%;
         width: 30%;
     }
+
+    #boton_enviar_consulta:hover {
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        background-color: white;
+        color: black;
+    }
+
+    #boton_enviar_consulta:active {
+        transition: transform 0.1s ease;
+        transform: scale(1.05);
+    }
+
+    #cuerpo_consultas form .entrada_info_consulta {
+        height: 10%;
+        width: 100%;
+        border: 1px solid white;
+        background-color: transparent;
+        padding-left: 5px;
+        text-align: center;
+        border-radius: 12px;
+        color: white;
+    }
+
+    #cuerpo_consultas form .entrada_info_consulta::placeholder {
+        color:white;
+    }
+
+    #cuerpo_consultas form .entrada_info_consulta:focus {
+        transition: background-color 0.1s ease;
+        background-color: white;
+        color: black;
+    }
+
+    #entrada_info_consulta_motivo {
+        height: 25%;
+        width: 100%;
+        border: 1px solid white;
+        background-color: transparent;
+        padding-left: 5px;
+        text-align: center;
+        border-radius: 12px;
+    }
+
+    #entrada_info_consulta_motivo::placeholder {
+        color: white;
+    }
+
+    #entrada_info_consulta_motivo:focus {
+        transition: background-color 0.1s ease;
+        background-color: white;
+        color: black;
+    }
+
 }
