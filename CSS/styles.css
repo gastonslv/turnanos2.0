@@ -104,6 +104,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 #iconos_redes img {
