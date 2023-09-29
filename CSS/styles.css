@@ -226,15 +226,16 @@ footer a {
     }
 
     .botones:hover {
-        cursor: pointer;
-        transition: transform 0.1s ease;
-        transform: scale(1.05);
-    }
-
-    .touchMe:active {
         transition: background-color 0.1s ease;
         background-color: #00698975;
         color: white;
         border-color:#00698927;
+        cursor: pointer;
+    }
+
+    .touchMe:active {
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        transform: scale(0.95);
     }
 }
