@@ -10,12 +10,25 @@
 #main_sobre_nosotros iframe {
     display: flex;
     grid-area: texto;
-    height: 70%;
-    width: 60%;
+    height: 50%;
+    width: 90%;
     border-radius: 20px;    
 }
 
-#cuerpo_video_sobre_nosotros iframe {
-    height: 50%;
+@media (min-width: 768px){
+    #main_sobre_nosotros iframe {
+        display: flex;
+        grid-area: texto;
+        height: 60%;
+        width: 80%;
+    }
 }
 
+@media (min-width: 1400px){
+    #main_sobre_nosotros iframe {
+        display: flex;
+        grid-area: texto;
+        height: 80%;
+        width: 80%;
+    }
+}
